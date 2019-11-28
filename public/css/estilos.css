@@ -1,0 +1,21 @@
+/*Seccion active menu*/
+#menuNav .active {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+/* Boton enviar */
+.boton-enviar,
+from input[type="submit"],
+button {
+  float: right;
+}
+
+.erroresFormulario {
+  color: #a94442;
+  background: #fdecec;
+  border: 1px solid #a94442;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 20px 0px;
+}

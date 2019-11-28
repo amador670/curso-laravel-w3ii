@@ -1,0 +1,243 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Estilos de enviar mensaje */
+.mensajes-container {
+  padding: 15px;
+  background: #F9F9F9;
+  border: 1px solid #F9F9F9;
+  border-radius: 7px;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.formulario-container textarea,
+.mensajes-container textarea {
+  height: 100px;
+  min-height: 100px;
+  max-height: 300px;
+}
+
+/* Propiedades boton file*/
+:root {
+  --color-bg-btn: #009dff;
+  --color-bg-btn-hover: #0062cc;
+  --color-shadow-btn-active: rgba(0, 0, 0, .3);
+  --color-border-field: rgb(200, 200, 200);
+}
+
+.input-file-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.input-file-input {
+  display: none;
+}
+
+.input-file-name-bar,
+.input-file-btn {
+  height: 34px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-family: 'Roboto', Arial;
+}
+
+.input-file-btn {
+  background-color: var(--color-bg-btn);
+  color: white;
+  width: 170px;
+  text-align: center;
+  line-height: 22px;
+  cursor: pointer;
+  border-bottom: 3px solid rgb(0, 0, 0, 0.3);
+}
+
+.input-file-btn:hover {
+  background-color: var(--color-bg-btn-hover);
+}
+
+.input-file-btn:active {
+  -webkit-box-shadow: 0 3px 5px var(--color-shadow-btn-active) inset;
+  box-shadow: 0 3px 5px var(--color-shadow-btn-active) inset;
+}
+
+.input-file-name-bar {
+  border: 1px solid var(--color-border-field);
+  width: calc(100% - 182px);
+  margin-right: 12px;
+  line-height: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  background: white;
+}
+
+.input-file-reverse .input-file-name-bar {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  margin-right: 0;
+  margin-left: 12px;
+}
+
+/* Estilo imagen preview de input file */
+#previewimage {
+  border: 1px dashed white;
+  -webkit-box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* COMENTARIOS */
+/* Lista de Comentarios publicados */
+.comments-container {
+  margin: 0 auto;
+  width: 100%;
+  font-family: 'Roboto', Arial;
+}
+
+.comments-container a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.comments-container a:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.comments-container ul {
+  list-style-type: none;
+}
+
+.comments-list {
+  margin-top: 25px;
+  padding: 0px;
+}
+
+.comments-list li {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.comments-list .comment-box {
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+.comment-box .comment-head {
+  background: #fff;
+  padding: 10px 12px;
+  border-bottom: 1px solid #E5E5E5;
+  overflow: hidden;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+
+.comment-box .comment-name {
+  color: #0056b3;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.comment-box .comment-head {
+  color: #999;
+  font-size: 13px;
+}
+
+.comment-box .comment-content {
+  background: #fff;
+  padding: 12px;
+  font-size: 15px;
+  color: #595959;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+
+/*Tabla de usuarios*/
+.usuarios-registrados {
+  background: #fcfcfc;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.usuarios-registrados li {
+  margin-bottom: 5px;
+  display: block;
+  text-decoration: none;
+}
+
+.usuarios-registrados li a {
+  color: #006cff;
+  text-decoration: none;
+}
+
+.boton-delete,
+.boton-editar,
+.boton-warning {
+  padding: 2px 5px;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', Arial;
+  margin-bottom: 0px;
+  float: none;
+}
+
+/* Efectos de botones en la seccion "usuarios" */
+/* .usuarios-registrados */
+.boton-editar {
+  color: #fff;
+  background: #52b6fd;
+}
+
+/* .usuarios-registrados */
+.boton-delete {
+  color: #ffdddd;
+  background: #ff5c5c;
+}
+
+/* .usuarios-registrados */
+.boton-warning {
+  background: #5e1752;
+}
+
+/* Propiedades boton file responsive*/
+@media screen and (max-width: 575px) {
+  .input-file-name-bar {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 6px;
+  }
+
+  .input-file-reverse {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .input-file-reverse .input-file-name-bar {
+    margin-left: 0;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+}
